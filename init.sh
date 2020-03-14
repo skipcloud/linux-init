@@ -66,3 +66,5 @@ git clone git@github.com:skipcloud/bin ~/bin
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 # tmux plugin manager
 git clone https://github.com/tmux-plugins/tpm $HOME/.tmux/plugins/tpm
+# oo go version manager
+git clone https://github.com/hit9/oo $HOME/src/oo
