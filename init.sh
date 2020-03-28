@@ -1,13 +1,17 @@
 # Install packages I use most often
 # This command is useful for searching through your apt logs 
 # find packages you manually installed:
-# zgrep -h 'Commandline: .*install' /var/log/apt/history.log /var/log/apt/history.log.*| sed -e 's/Commandline: //' -e '/apt/!d'
+#
+# zgrep -h 'Commandline: .*install' /var/log/apt/history.log /var/log/apt/history.log.* | sed -e 's/Commandline: //' -e '/apt/!d'
 
 
 if [ ! -e ~/.ssh/alan.gibson ] && [ ! -e ~/.ssh/alan.gibson.pub ]; then
   echo "install SSH keys to proceed" 2>&
   exit 1
 fi
+
+sudo apt-get update
+sudo apt-get upgrade
 
 # vim, of course
 sudo apt-get install vim
